@@ -1,0 +1,40 @@
+.wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.wrapper button {
+  padding: 0.5rem 1rem;
+  background-color: rgb(163, 220, 215);
+  border: 5px solid rgb(83, 165, 159);
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.accordian {
+  width: 500px;
+}
+
+.item {
+  background-color: rgb(183, 243, 153);
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.title {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.content {
+  color: rgb(66, 66, 66);
+  height: auto;
+  font-weight: bold;
+}
