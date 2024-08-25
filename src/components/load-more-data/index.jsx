@@ -42,8 +42,8 @@ export default function LoadMoreData() {
       <div className="products-cont">
         {
           products && products.length ? 
-          products.map(item => 
-          <div className="product" key={item.id}>
+          products.map((item, index) => 
+          <div className="product" key={`${item.id}-${index}`}>
             <img src={item.thumbnail} alt={item.title} />
             <p>{item.title}</p>
             <h4>{item.price}$</h4>
