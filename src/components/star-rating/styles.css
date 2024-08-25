@@ -1,5 +1,6 @@
 .active {
   color: rgb(255, 213, 0);
+  filter: drop-shadow(1px 3px orange);
 }
 
 .inactive {

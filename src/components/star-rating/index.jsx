@@ -27,6 +27,7 @@ export default function StarRating({numOfStars = 5}) {
   return (
     <div className="star-rating">
       {
+        //Creates an array with numOfStars elements (e.g., 5 elements for 5 stars).
         [...Array(numOfStars)].map((_,index) => {
           //index starts with 0... so we have to add +1 to be user friendly and when they click on 1st star it returns 1 and 2 returns 2.....
           index += 1
