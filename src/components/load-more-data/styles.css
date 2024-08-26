@@ -44,3 +44,11 @@
   font-weight: bold;
   cursor: pointer;
 }
+
+.btn:disabled {
+  background-color: #ccc; /* Gray background */
+  color: #666; /* Darker gray text */
+  cursor: not-allowed; /* Disabled cursor */
+  opacity: 0.6; /* Slightly transparent */
+  border: 2px solid #b5b5b5;
+}

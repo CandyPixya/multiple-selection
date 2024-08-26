@@ -7,6 +7,7 @@ export default function LoadMoreData() {
   const [loading, setLoading] = useState(false) //to manage data loading
   const [products, setProducts] = useState([]) //to save imported data from the api which are products
   const [count, setCount] = useState(0) //to count the number of requests (to load more products)
+  const [disableBtn, setDisableBtn] = useState(false)
 
   async function fetchProducts() {
     try {
@@ -33,6 +34,10 @@ export default function LoadMoreData() {
     fetchProducts() //ensures whenever the count changes (by clicking on the button) fetchProducts() is called.
   }, [count]) // whenever button is clicked and count increases, the fetchProducts is called.... so fetchProducts depands on the count number
 
+  useEffect(() => {
+    if (products && products.length === 120) setDisableBtn(true)
+  }, [products])
+
   if (loading) {
     return <div>Loading data ! pls wait</div>
   }
@@ -52,7 +57,10 @@ export default function LoadMoreData() {
         }
       </div>
       <div className="button-container">
-        <button className="btn" onClick={()=> setCount(count + 1) /* this makes the count to goes up and based on that fetchProducts() will be called again to send request for the api and gets and renders the new 20 images */ }>Load More Products...</button>
+        <button disabled={disableBtn} className="btn" onClick={()=> setCount(count + 1) /* this makes the count to goes up and based on that fetchProducts() will be called again to send request for the api and gets and renders the new 20 images */ }>Load More Products...</button>
+        {
+          disableBtn ? <p>You have reached 120 products</p> : null
+        }
       </div>
     </div>
   )
