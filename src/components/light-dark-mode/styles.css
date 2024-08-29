@@ -1,0 +1,33 @@
+:root {
+  --background : white;
+  --text-primary: black;
+  --btn-bg: black;
+  --btn-text: white;
+}
+
+[data-theme='dark'] {
+  --background : black;
+  --text-primary: white;
+  --btn-bg: white;
+  --btn-text: black;
+}
+
+.light-dark-mode {
+  background-color: var(--background);
+  color: var(--text-primary);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+
+button {
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  padding: 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
