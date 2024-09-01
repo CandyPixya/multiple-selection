@@ -1,0 +1,22 @@
+.heading {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.content {
+  color: rgb(255, 62, 168);
+  text-shadow: 2px 2px 2px rgb(255, 150, 167);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.active-tab {
+  filter: drop-shadow(2px 4px rgb(255, 62, 168));
+}
+
+.active-tab button {
+  background-color: pink;
+  color: black;
+  border: 3px solid rgb(255, 62, 168);
+}

@@ -8,6 +8,7 @@ import TreeView from './components/tree-view';
 import menus from './components/tree-view/data';
 import QRCodeGenerator from './components/qr-code-generator';
 import LightDarkMode from './components/light-dark-mode';
+import TabTest from './components/custom-tabs/tab-test';
 
 
 function App() {
@@ -36,6 +37,9 @@ function App() {
 
       {/* Light and Dark Theme switch */}
       <LightDarkMode />
+
+      {/* Custom Tabs Component */}
+      <TabTest />
 
     </div>
   );
