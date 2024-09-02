@@ -9,6 +9,7 @@ import menus from './components/tree-view/data';
 import QRCodeGenerator from './components/qr-code-generator';
 import LightDarkMode from './components/light-dark-mode';
 import TabTest from './components/custom-tabs/tab-test';
+import ModalTest from './components/custom-modal-popup/modal-test';
 
 
 function App() {
@@ -40,6 +41,9 @@ function App() {
 
       {/* Custom Tabs Component */}
       <TabTest />
+
+      {/* Custom Modal Popup Component */}
+      <ModalTest />
 
     </div>
   );
