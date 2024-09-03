@@ -10,6 +10,7 @@ import QRCodeGenerator from './components/qr-code-generator';
 import LightDarkMode from './components/light-dark-mode';
 import TabTest from './components/custom-tabs/tab-test';
 import ModalTest from './components/custom-modal-popup/modal-test';
+import GithubProfileFinder from './components/github-profile-finder';
 
 
 function App() {
@@ -44,6 +45,9 @@ function App() {
 
       {/* Custom Modal Popup Component */}
       <ModalTest />
+
+      {/* Github Profile Finder */}
+      <GithubProfileFinder />
 
     </div>
   );
