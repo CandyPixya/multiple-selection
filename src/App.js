@@ -11,6 +11,7 @@ import LightDarkMode from './components/light-dark-mode';
 import TabTest from './components/custom-tabs/tab-test';
 import ModalTest from './components/custom-modal-popup/modal-test';
 import GithubProfileFinder from './components/github-profile-finder';
+import SearchAutocomplete from './components/search-autocomplete-with-api';
 
 
 function App() {
@@ -48,6 +49,9 @@ function App() {
 
       {/* Github Profile Finder */}
       <GithubProfileFinder />
+
+      {/* Search auto complete component */}
+      <SearchAutocomplete />
 
     </div>
   );
