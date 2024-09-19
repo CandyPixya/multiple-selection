@@ -12,6 +12,9 @@ import TabTest from './components/custom-tabs/tab-test';
 import ModalTest from './components/custom-modal-popup/modal-test';
 import GithubProfileFinder from './components/github-profile-finder';
 import SearchAutocomplete from './components/search-autocomplete-with-api';
+import TicTacToe from './components/tic-tac-toe';
+import UseFetchHooktest from './components/use-fetch/test';
+import UseOnclickOutsideTest from './components/use-outside-click/test';
 
 
 function App() {
@@ -53,6 +56,14 @@ function App() {
       {/* Search auto complete component */}
       <SearchAutocomplete />
 
+      {/* Tic Tac Toe Component */}
+      <TicTacToe />
+
+      {/* UseFetch custom hook */}
+      <UseFetchHooktest />
+
+      {/* Use onclick outside hook test */}
+      <UseOnclickOutsideTest />
     </div>
   );
 }

@@ -1,0 +1,10 @@
+.click-cont {
+  margin-top: 10rem;
+  margin-bottom: 15rem;
+}
+
+.cont-paper {
+  background-color: rgb(255, 218, 224);
+  border-radius: 20px;
+  border: 2px solid rgb(255, 153, 187);
+}
